@@ -58,9 +58,15 @@ body {
   font-weight: bold;
 }
 input[type="text"] {
-  margin: 22px;
+  font-size: 20px;
+  margin: 20px 0 20px;
   border-bottom: 2px solid white;
   color: white;
+}
+::placeholder {
+  color: white;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 .footer {
   display: flex;
