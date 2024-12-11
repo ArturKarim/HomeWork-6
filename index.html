@@ -8,6 +8,12 @@
     <title></title>
   </head>
   <body>
+    <div class="overlay">
+      <div class="popup" id="overlay">
+        Нажмите ОК чтобы закрыть!
+        <div class="button" id="button">OK</div>
+      </div>
+    </div>
     <div class="header">
       <div class="header-text">
         <p>ПОСЫЛКА</p>
@@ -20,29 +26,24 @@
     </div>
     <div class="content">
       <div class="forms">
-        <form>
-          <label for="fname">Имя</label>
-          <input type="text" id="fname" name="fname" placeholder="Ира" />
-          <label for="fname">Город</label>
-          <input type="text" id="fname" name="fname" placeholder="Сочи" />
-          <label for="fname">Подарок</label>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="Книга в твёрдом переплёте"
-          />
-          <label for="fname">Электронная почта</label>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="daykiller@gmail.com"
-          />
-        </form>
+        <span class="label">Имя</span>
+        <input type="text" class="form-input" placeholder="Ира" />
+        <span class="label">Город</span>
+        <input type="text" class="form-input" placeholder="Сочи" />
+        <span class="label">Подарок</span>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Книга в твёрдом переплёте"
+        />
+        <span class="label">Электронная почта</span>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="daykiller@gmail.com"
+        />
       </div>
       <img class="content-image" src="./assets/img/background.png" />
-
       <div class="content-text">ВАША ПОСЫЛКА УЖЕ В ПУТИ!</div>
     </div>
     <div class="footer">
@@ -54,4 +55,5 @@
       </div>
     </div>
   </body>
+  <script src="./assets/js/index.js"></script>
 </html>
