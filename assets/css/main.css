@@ -17,6 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 20px;
+  cursor: pointer;
 }
 .header-image {
   display: flex;
@@ -28,12 +29,15 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-
   background-color: #336fd1;
+  height: calc(100% - 90px - 90px);
+}
+.image-wrapper {
+  min-width: 100vw;
 }
 .content-image {
-  max-height: 630px;
-  max-width: 1440px;
+  max-height: 600px;
+  overflow: hidden;
 }
 .content-text {
   display: flex;
@@ -60,7 +64,6 @@ body {
 }
 .form-input {
   border-bottom: 1px solid white;
-
   &::placeholder {
     color: white;
   }
@@ -76,6 +79,7 @@ body {
   padding: 30px;
   background-color: #f8bfc7;
   color: white;
+  height: 90px;
 }
 .footer-text {
   display: flex;
